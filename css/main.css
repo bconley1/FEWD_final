@@ -83,9 +83,9 @@ p, .p {
 	margin: 40px auto;
 }
 .home_top_text{
-	width: 90%;
+	width: 100%;
 	max-width: 640px;
-	margin: 30px auto 10px;
+	margin: 30px 20px 10px 20px;
 }
 .home_text_wrapper{
     width: 100%;
@@ -147,18 +147,18 @@ p, .p {
 	text-align: center;
 	text-shadow: 0 0 5px #000000;
 }
-.home2_top_text{
+/*.home2_top_text{
 	width: 90%;
 	max-width: 640px;
 	margin: 30px auto 10px;
-}
+}*/
 
 /*********** Bottom ***********/
 
 .home_bottom_section{
-	width: 96%;
+	width: 100%;
 	max-width: 960px;
-	margin: 50px auto;
+	margin: 50px 20PX;
 }
 .home_card_container {
     display: flex;
