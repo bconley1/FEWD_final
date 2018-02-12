@@ -32,6 +32,9 @@ a:hover {
 .color_white{
 	color: white;
 }
+.gradient_blue{
+	background: linear-gradient(180deg, #14A5F2 0%, #096CE0 100%);
+}
 .aTag {
 	position: absolute;
 	top: 0;
@@ -73,36 +76,34 @@ p, .p {
 
 /*********** TOP HOME 1 ***********/
 
-.home_top_section{
-	height: 400px;
-}
 .home_text_wrapper{
-    width: 100%;
     padding: 100px 0px 100px 0px;
-    position: absolute;
-	z-index: 1;
 }
+.home_top_text_width{
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+ }
 .home_top_rule{
 	width: 150px;
 	height: 6px;
 	background-color: white;
 	margin: 40px auto;
 }
-.home_top_text{
-	width: 100%;
-	max-width: 640px;
+.home_top_subtext{
 	margin: 30px auto 10px;
-}
-.gradient_blue{
-	background: linear-gradient(180deg, #14A5F2 0%, #096CE0 100%);
 }
 
 /*********** TOP HOME 2 ***********/
 
-.home2_top_section{
-	width: 100%;
-	height: 400px;
-	/*padding: 100px 0px 100px 0px;*/
+.home2_top_text_width{
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+ }
+.home2_image_bg{
 	display: block;
     position: relative;
 	background-image: url("../images/index2_hero_image.jpg");
@@ -112,10 +113,8 @@ p, .p {
   	background-size: cover;
   	text-align: center;
 }
-.layer{
+.color_layer{
     background-color: rgba(0, 0, 0, .4);
-    width: 100%;
-    height: 400px;
     position: absolute;
     top: 0;
     left: 0;
