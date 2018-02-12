@@ -173,10 +173,6 @@ p, .p {
     	flex-direction: column;
     	align-items: stretch;
 	}
-	.home_top_section{
-		width: 100%;
-		max-width: 768px;
-	}
 	.home_bottom_section{
 		width: 100%;
 		max-width: 768px;
@@ -184,9 +180,12 @@ p, .p {
 		padding: 10px;
 		box-sizing: border-box;
 	}
+	.home_text_wrapper{
+    padding: 50px 0px 50px 0px;
+}
 }
 
-@media screen and (max-width: 420px) {
+/*@media screen and (max-width: 420px) {
     .home_card_container {
     	flex-direction: column;
     	align-items: stretch;
@@ -202,6 +201,6 @@ p, .p {
 		padding: 10px;
 		box-sizing: border-box;
 	}
-}
+}*/
 
 
