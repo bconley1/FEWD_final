@@ -1,5 +1,9 @@
+html,
 body {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+    margin: 0;
+    padding: 0;
 	text-align: center;
 	background-color: #EFEFEF;
     box-sizing: border-box;
@@ -7,7 +11,6 @@ body {
 a:link {
   text-decoration: none;
   color:inherit;
-  /*border-bottom: 1px solid #096CE0;*/
 }
 a:hover {
   text-decoration: none;
@@ -15,7 +18,58 @@ a:hover {
   border-bottom: none;
 }
 
+/*********** Type ***********/
+
+h1, .H1 {
+	font-weight: 700;
+	font-size: 3.85rem;
+	line-height: 5.5rem;
+	color: white;
+	text-align: center;
+}
+h2, .h2 {
+	font-weight: 400;
+	font-size: 1.285rem;
+	line-height: 1.9rem;
+	color: white;
+	text-align: center;
+}
+h3, .H3 {
+	color: #096CE0;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding-bottom: 1.05rem;
+}
+p, .p {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.65rem;
+	color: #333333;
+	text-align: left;
+}
+.home2_h1{
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+	font-size: 4.15rem;
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 5px #000000;
+}
+.home2_h2{
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+	font-size: 1.275rem;
+	letter-spacing: .075rem;
+	line-height: 1.95rem;
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 5px #000000;
+}
+
+
 /*********** common helpers ***********/
+
 
 .color_gray{
   color: #EFEFEF;
@@ -43,38 +97,21 @@ a:hover {
 	bottom: 0;
 	z-index: 2;
 }
+.aTag_hero {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.hide {
+  display: none;
+}
 
-/*********** Type ***********/
-
-h1, .H1 {
-	font-weight: 700;
-	font-size: 54px;
-	color: white;
-	text-align: center;
-}
-h2, .h2 {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 26px;
-	color: white;
-	text-align: center;
-}
-h3, .H3 {
-	color: #096CE0;
-	font-weight: 600;
-	font-size: 21px;
-	margin-bottom: 15px;
-	line-height: 28px;
-}
-p, .p {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 23px;
-	color: #333333;
-	text-align: left;
-}
 
 /*********** TOP HOME 1 ***********/
+
 
 .home_text_wrapper{
     padding: 100px 0px 100px 0px;
@@ -93,8 +130,13 @@ p, .p {
 .home_top_subtext{
 	margin: 30px auto 10px;
 }
+.hero_1{
+	
+}
+
 
 /*********** TOP HOME 2 ***********/
+
 
 .home2_top_text_width{
     width: 100%;
@@ -122,26 +164,13 @@ p, .p {
     bottom: 0;
     z-index: 0;
 }
-.home2_h1{
-	font-family: 'Noto Serif', serif;
-	font-weight: 400;
-	font-size: 58px;
-	color: white;
-	text-align: center;
-	text-shadow: 0 0 5px #000000;
-}
-.home2_h2{
-	font-family: 'Noto Serif', serif;
-	font-weight: 400;
-	font-size: 18px;
-	letter-spacing: 1px;
-	line-height: 27px;
-	color: white;
-	text-align: center;
-	text-shadow: 0 0 5px #000000;
+.hero_2{
+	
 }
 
+
 /*********** Bottom ***********/
+
 
 .home_bottom_section{
 	width: 100%;
@@ -168,38 +197,63 @@ p, .p {
 }
 
 
+/*********** MEDIA QUERIES ***********/
+
+
+@media screen and (min-width: 960px) {
+	font-size: 3.85rem;
+}
+
 @media screen and (max-width: 768px) {
     .home_card_container {
     	flex-direction: column;
     	align-items: stretch;
 	}
 	.home_bottom_section{
-		width: 100%;
-		max-width: 768px;
-		margin: auto;
 		padding: 10px;
-		box-sizing: border-box;
 	}
-	.home_text_wrapper{
-    padding: 50px 0px 50px 0px;
-}
+	html,body {
+		font-size: 13px;
+	}
+	h1, .home2_h1{
+		font-size: 6.75vw;
+		line-height: 3rem;
+	}
+
 }
 
-/*@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
+	.home_text_wrapper{
+    	padding: 50px 0px 50px 0px;
+	}
+	html,body {
+		font-size: 12px;
+	}
+	h1, .home2_h1{
+		font-size: 3rem;
+		/*line-height: 2rem;*/
+	}
+}
+
+/*@media screen and (max-width: 768px) {
     .home_card_container {
     	flex-direction: column;
     	align-items: stretch;
 	}
-	.home_top_section{
-		width: 100%;
-		max-width: 420px;
-	}
 	.home_bottom_section{
-		width: 100%;
-		max-width: 420px;
-		margin: auto;
 		padding: 10px;
-		box-sizing: border-box;
+	}
+	.home_text_wrapper{
+    	padding: 50px 0px 50px 0px;
+	}
+	html,body {
+	font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	html,body {
+	font-size: 12px;
 	}
 }*/
 
